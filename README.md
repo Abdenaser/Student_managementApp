@@ -10,7 +10,7 @@ Each student is defined by:
 - his birthday
 - Its gender: MASCULINE or FEMININE
 - An attribute that indicates whether it is in good standing or not
-   The application must offer the following functionalities:
+The application must offer the following functionalities:
 - Search for students by name
 - Do the pagination
 - Delete students using method (DELETE instead of GET)
