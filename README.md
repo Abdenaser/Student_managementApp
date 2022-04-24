@@ -31,31 +31,31 @@ The application must offer the following functionalities:
 
 
 > ## 2- Create the EtudiantRepository repository: 
-<img width="503" alt="3" src="https://ibb.co/89hbSpz">
+<img width="503" alt="3" src="https://github.com/Abdenaser/Student_managementApp/blob/23051afd6d72fb17a4cdf5d96a47f5ad0c1053be/src/Screenshots/Etudiant%20Repository.png">
 
 
 > ## 3- Create the Student Controller :
 
 * Home page:
 
-<img width="377" alt="4" src="https://ibb.co/fNSjxNc">
+<img width="377" alt="4" src="https://github.com/Abdenaser/Student_managementApp/blob/23051afd6d72fb17a4cdf5d96a47f5ad0c1053be/src/Screenshots/Home%20Page%20.png">
 
-<img width="934" alt="17" src="https://ibb.co/kHyYhrB">
+<img width="934" alt="17" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/HomePage.png">
 
 
 
 * List of students + pagination + keyword search:
 
- <img width="671" alt="5" src="https://ibb.co/r21x8z5">
+ <img width="671" alt="5" src="https://github.com/Abdenaser/Student_managementApp/blob/23051afd6d72fb17a4cdf5d96a47f5ad0c1053be/src/Screenshots/Student%20List%20+%20pagination%20.png">
 
- <img width="932" alt="19" src="https://ibb.co/n67rwVk">
+ <img width="932" alt="19" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/Student_List.png">
 
 
 * Delete student by id:
 
-  <img width="421" alt="6" src="https://ibb.co/syhczB9">
+  <img width="421" alt="6" src="https://github.com/Abdenaser/Student_managementApp/blob/23051afd6d72fb17a4cdf5d96a47f5ad0c1053be/src/Screenshots/Delete.png">
 
-  <img width="933" alt="21" src="https://ibb.co/Cb89QGk">
+  <img width="933" alt="21" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/Alert.png">
 
 
 * Add new Student:
@@ -63,25 +63,25 @@ The application must offer the following functionalities:
   <img width="414" alt="7" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/Add_new_student.png">
 
   
-<img width="935" alt="20" src="https://ibb.co/kcQ25tH">
+<img width="935" alt="20" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/Add%20new%20student.png">
 
 
 * Edit a student:
 
-  <img width="487" alt="8" src="https://ibb.co/fMJvxNm">
+  <img width="487" alt="8" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/Edit-Student.png">
 
-  <img width="933" alt="21" src="https://ibb.co/ZV2RmKx">
+  <img width="933" alt="21" src="https://github.com/Abdenaser/Student_managementApp/blob/ff3452096bebec9972d30d01f0b39833dd2808e9/src/Screenshots/editstudent.png">
 
 > ## 4 - Authentication with the USER role
 
 * This user has the right to consult the list of students but cannot perform operations such as deletion, modification or addition.
 
- <img width="933" alt="22" src="https://ibb.co/FHRsndb">
+ <img width="933" alt="22" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/UserInterface.png">
 
-  <img width="933" alt="23" src="https://ibb.co/56vhBfK">
+  <img width="933" alt="23" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/StudentInfo.png">
 
  > ## 5- Error_Page 403
-<img width="933" alt="24" src="https://ibb.co/S56njJT">
+<img width="933" alt="24" src="https://github.com/Abdenaser/Student_managementApp/blob/20b86f465b18c2775350320d3db624c18917c58e/src/Screenshots/Eror403.png">
 
 > ## 6- Spring Security
 * Les entités AppUser & AppRole:
@@ -93,12 +93,12 @@ The application must offer the following functionalities:
   
 * AppUserRepository:
 
-  <img width="505" alt="14" src="https://ibb.co/YBNNPxL">
+  <img width="505" alt="14" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/AppUserRepository.png">
 
   
 * AppRoleRepository:
 
- <img width="486" alt="15" src="https://ibb.co/TBbQ6hT">
+ <img width="486" alt="15" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/AppRoleRespository.png">
 
   
 * SecurityConfig:
@@ -186,8 +186,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 * Application.proprieties:
 
-  <img width="605" alt="11" src="https://ibb.co/rb5rHXy">
+  <img width="605" alt="11" src="https://github.com/Abdenaser/Student_managementApp/blob/402447e49b617c74e68e4df4b58ef1b4b4ce6977/src/Screenshots/Application.proprieties.png">
 
 
 > ## 9- The structure of the project
-<img width="329" alt="25" src="https://ibb.co/7v1DsCp">
+<img width="329" alt="25" src="https://github.com/Abdenaser/Student_managementApp/blob/883a3e5eeaf0b296e913c485dff883dcecbbeb51/src/Screenshots/structure%20du%20Projet.png">
