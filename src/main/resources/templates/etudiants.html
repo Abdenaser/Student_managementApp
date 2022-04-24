@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="template1"
+      >
+<head>
+    <meta charset="UTF-8">
+    <title>Students Management</title>
+
+</head>
+<body>
+<div layout:fragment="content1">
+    <div class="container mt-4 text-white">
+        <div>
+            <div>liste des etudiants</div>
+            <div>
+                <form method="get" th:action="@{/user/index}">
+                    <label>Chercher un etudiant :</label>
+                    <input type="text" name="keyword" placeholder="Nom du l'étudiant" th:value="${keyword}">
+                    <button type="submit" class="btn btn-light"><i class="fas fa-search"></i> search </button>
+                </form>
+                <table class="table table-bordered text-white">
+                    <thead>
+                    <tr>
+                        <th> ID</th>
+                        <th> Nom</th>
+                        <th>Prenom</th>
+                        <th> email</th>
+                        <th> Date de Naissance</th>
+                        <th>Gender</th>
+                        <th> En regle</th>
+                        <th> Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="e:${listEtudiant}">
+                        <td th:text="${e.id}"></td>
+                        <td th:text="${e.nom}"></td>
+                        <td th:text="${e.prenom}"></td>
+                        <td th:text="${e.email}"></td>
+                        <td th:text="${e.dateNaissance}"></td>
+                        <td th:text="${e.gender}"></td>
+                        <td th:text="${e.enRegle}"></td>
+                        <td>
+                            <a sec:authorize="hasAuthority('ADMIN')" onclick="return confirm('Etes-vous sur de supprimer cette etudiant?')"
+                               class="btn btn-outline-danger"
+                               th:href="@{/admin/delete(id=${e.id}, keyword=${keyword}, page=${currentPage})}"><i
+                                    class="fas fa-trash-alt"></i></a>
+                            <a sec:authorize="hasAuthority('ADMIN')" class="btn btn-outline-warning"
+                               th:href="@{/admin/editEtudiant(id=${e.id}, keyword=${keyword}, page=${currentPage})}"><i
+                                    class="fas fa-user-edit"></i></a>
+                            <a class="btn btn-outline-success"
+                               th:href="@{/user/listEtudiant(id=${e.id}, keyword=${keyword}, page=${currentPage})}"><i
+                                    class="fas fa-list"></i></a>
+                        </td>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <ul class="nav nav-pills">
+                    <li th:each="page,status:${pages}">
+                        <a th:class="${status.index==currentPage?'btn btn-success ms-1':'btn btn-outline-success ms-1'}"
+                           th:text="${status.index}"
+                           th:href="@{/user/index(page=${status.index},keyword=${keyword})}"></a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills">
+                    <li>
+                        <a class="btn btn-outline-success mt-4" th:href="@{/admin/formEtudiant}">Add New Student</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
